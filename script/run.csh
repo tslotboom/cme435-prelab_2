@@ -1,0 +1,1 @@
+vsim -c tbench_top -do script/ex1.do
