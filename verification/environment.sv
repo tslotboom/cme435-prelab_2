@@ -6,6 +6,9 @@ class environment;
   // generator instance
   generator gen;
 
+  // mailbox handles
+  mailbox gen2driv;
+
   // virtual interface
   virtual intf vif;
 
@@ -13,8 +16,10 @@ class environment;
   function new(virtual intf vif);
     // get the interface from test
     this.vif = vif;
+    // create mailbox(es) for data exchange
+    gen2driv = new();
     // create generator
-    gen = new();
+    gen = new(gen2driv);
 
   endfunction
 
