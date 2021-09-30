@@ -1,1 +1,3 @@
-vsim -c tbench_top -do script/ex1.do
+#!/bin/csh
+source /CMC/scripts/mentor.questasim.2019.2.csh
+vsim -c -do script/run.do

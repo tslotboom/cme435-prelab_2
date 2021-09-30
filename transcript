@@ -1,0 +1,74 @@
+# do script/run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim vmap 2019.2 Lib Mapping Utility 2019.04 Apr 16 2019
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim vlog 2019.2 Compiler 2019.04 Apr 16 2019
+# Start time: 17:48:32 on Sep 30,2021
+# vlog -f script/run.f 
+# -- Compiling module alu
+# -- Compiling module dut_top
+# -- Compiling package environment_sv_unit
+# -- Compiling interface intf
+# -- Compiling package tbench_top_sv_unit
+# -- Compiling module tbench_top
+# -- Compiling package test_sv_unit
+# -- Compiling program testbench
+# 
+# Top level modules:
+# 	tbench_top
+# End time: 17:48:32 on Sep 30,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim tbench_top 
+# Start time: 17:48:32 on Sep 30,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim
+# //  Version 2019.2 linux Apr 16 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tbench_top_sv_unit(fast)
+# Loading work.tbench_top(fast)
+# Loading work.test_sv_unit(fast)
+# Loading work.testbench(fast)
+# Loading work.intf(fast)
+# [Testbench]: Start of testcase(s) at 0
+# [Environment]: Start of run at 0
+# [Environment]: Start of pre_test() at 0
+# [Environment]: Reset started at 0
+# [Environment]: End of pre_test() at 0
+# [Environment]: Start of test() at 0
+# ----------
+# [Generator]: a = 4, b = 1
+# [Generator]: op = 0d: y = 0
+# ----------
+# [Generator]: a = 9, b = 3
+# [Generator]: op = 0d: y = 0
+# ----------
+# [Generator]: a = 13, b = 13
+# [Generator]: op = 0d: y = 0
+# ----------
+# [Generator]: a = 5, b = 2
+# [Generator]: op = 0d: y = 0
+# ----------
+# [Generator]: a = 1, b = 13
+# [Generator]: op = 0d: y = 0
+# [Environment]: End of test() at 0
+# [Environment:] Start of post_test() at 0
+# [Environment:] End of post_test at 0
+# [Environment]: End of run() at 0
+# ** Note: $finish    : verification/environment.sv(44)
+#    Time: 0 ns  Iteration: 1  Instance: /tbench_top/test
+# [Testbench]: End of testcase(s) at 0
+# End time: 17:48:34 on Sep 30,2021, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
