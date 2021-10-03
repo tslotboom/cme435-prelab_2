@@ -1,7 +1,5 @@
-`include "interface.sv"
-`include "environment.sv"
-`include "transaction.sv"
-`include "generator.sv"
+`ifndef _TBENCH_TOP_
+`define _TBENCH_TOP_
 module tbench_top;
 
   // clock and reset signal declaration
@@ -14,7 +12,7 @@ module tbench_top;
   // reset generation
   initial begin
     reset = 1;
-    #6 reset =0;
+    #6 reset = 0;
   end
 
   // create interface instance to connect DUT and testcase
@@ -28,3 +26,4 @@ module tbench_top;
     $dumpfile("dumpfile.vcd"); $dumpvars;
   end
 endmodule
+`endif // _TBENCH_TOP_

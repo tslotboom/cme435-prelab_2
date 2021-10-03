@@ -8,7 +8,7 @@ class transaction;
     function void display(string name);
         $display("----------");
         $display("%s: a = %0d, b = %0d", name, a, b);
-        $display("%s: op = %od: y = %0d", name, op, y);
+        $display("%s: op = %0d: y = %0d", name, op, y);
     endfunction
 endclass
 `endif //_TRANSACTION_

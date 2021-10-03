@@ -12,17 +12,18 @@ Z0 d/home/ths943/engr-ece/cme/435_verification/labs/prelab2/cme435-prelab_2
 T_opt
 !s11d tbench_top_sv_unit /home/ths943/engr-ece/cme/435_verification/labs/prelab2/cme435-prelab_2/work 1 intf 1 /home/ths943/engr-ece/cme/435_verification/labs/prelab2/cme435-prelab_2/work 
 !s11d test_sv_unit /home/ths943/engr-ece/cme/435_verification/labs/prelab2/cme435-prelab_2/work 1 intf 1 /home/ths943/engr-ece/cme/435_verification/labs/prelab2/cme435-prelab_2/work 
-Z1 !s110 1633045712
-VaV5PVWPn2;2f4B^:RA`]b3
+!s110 1633304676
+VoZGm]P@hP]QX9FZc0E^Ni2
 04 10 4 work tbench_top fast 0
-=1-000ae431a4f1-61564cd0-6aad1-3b94
+=1-000ae431a4f1-615a4063-c7160-5d87
 o-quiet -auto_acc_if_foreign -work work
-Z2 tCvgOpt 0
+Z1 tCvgOpt 0
 n@_opt
 OE;O;2019.2;69
+R0
 valu
-Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-R1
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1633305055
 !i10b 1
 !s100 QV1R:EeSN8ofbmYo=FY<D2
 !s11b ?R`1<oocZANN5EgM8UP^G2
@@ -38,15 +39,15 @@ Z5 OE;L;2019.2;69
 r1
 !s85 0
 31
-Z6 !s108 1633045712.000000
-Z7 !s107 verification/interface.sv|verification/transaction.sv|verification/generator.sv|verification/test.sv|verification/tbench_top.sv|verification/environment.sv|dut/dut_top.sv|dut/alu.sv|
-Z8 !s90 -f|script/run.f|
+Z6 !s108 1633305055.000000
+!s107 verification/scoreboard.sv|verification/monitor.sv|verification/driver.sv|verification/transaction.sv|verification/generator.sv|verification/environment.sv|verification/test.sv|verification/tbench_top.sv|dut/dut_top.sv|dut/alu.sv|
+Z7 !s90 -f|script/run.f|
 !i113 0
-Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R2
-vdut_top
-R3
+Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
+vdut_top
+R2
+R3
 !i10b 1
 !s100 n27LP=E0K`HXgjfIP;HRE0
 !s11b Ueoli;ie^o>JWWXn;XYjz2
@@ -63,145 +64,154 @@ r1
 !s85 0
 31
 R6
+Z9 !s107 verification/scoreboard.sv|verification/monitor.sv|verification/driver.sv|verification/transaction.sv|verification/generator.sv|verification/environment.sv|verification/test.sv|verification/tbench_top.sv|dut/dut_top.sv|dut/alu.sv|
 R7
-R8
 !i113 0
-R9
-R2
+R8
+R1
 Xenvironment_sv_unit
 Z10 !s115 intf
-R3
-V5LmcUj>E;Oa[K5aMI@J:K0
+R2
+VlXVMYc9JA[eV3Ef?EbHnT3
 r1
 !s85 0
 !i10b 1
-!s100 T6FM1aOmTG`K=96UA8JL`3
-I5LmcUj>E;Oa[K5aMI@J:K0
+!s100 f:7Dha=HJT>c0ZYJlzHXb0
+IlXVMYc9JA[eV3Ef?EbHnT3
 !i103 1
 S1
 R0
-Z11 w1633045579
+Z11 w1633304656
 8verification/environment.sv
 Z12 Fverification/environment.sv
 Z13 Fverification/generator.sv
 Z14 Fverification/transaction.sv
+Z15 Fverification/driver.sv
+Z16 Fverification/monitor.sv
+Z17 Fverification/scoreboard.sv
 L0 3
 R5
 31
 R6
-R7
-R8
-!i113 0
 R9
-R2
-Yintf
-Z15 !s105 tbench_top_sv_unit
-Z16 DXx4 work 18 tbench_top_sv_unit 0 22 9EC:G3VazD7Q?:N:o_WE;1
-R3
+R7
+!i113 0
+R8
 R1
+Yintf
+R2
+!s110 1633299675
 !i10b 1
 !s100 Ae>Ub_E3SdobzX1T1T9]<3
 !s11b lj5A]^@>lT_BUG:hJ4:h;2
 IfYkToehLh8H[^CP9X;Bbk1
 R4
+!s105 tbench_top_sv_unit
 S1
 R0
 w1633037344
 8verification/interface.sv
-Z17 Fverification/interface.sv
+Z18 Fverification/interface.sv
+L0 3
+R5
+r1
+!s85 0
+31
+!s108 1633299675.000000
+!s107 verification/interface.sv|verification/scoreboard.sv|verification/monitor.sv|verification/driver.sv|verification/transaction.sv|verification/generator.sv|verification/environment.sv|verification/test.sv|verification/tbench_top.sv|dut/dut_top.sv|dut/alu.sv|
+R7
+!i113 0
+R8
+R1
+vtbench_top
+R2
+R3
+!i10b 1
+!s100 Li]`goozMUool?Jh0MJ_=0
+!s11b cSIZ_=i1X_4h9K;5GQoNn0
+IW=oOE``>2RSG8LZSgC6eK0
+R4
+S1
+R0
+w1633304443
+Z19 8verification/tbench_top.sv
+Z20 Fverification/tbench_top.sv
 L0 3
 R5
 r1
 !s85 0
 31
 R6
-R7
-R8
-!i113 0
 R9
-R2
-vtbench_top
-R3
-R16
-R4
-r1
-!s85 0
-!i10b 1
-!s100 P?0G^FR24fZgkfO>YWilS3
-IzA5h^lD[@j<b[<nG4nl[A0
-R15
-S1
-R0
-w1633045243
-Z18 8verification/tbench_top.sv
-Z19 Fverification/tbench_top.sv
-L0 5
-R5
-31
-R6
 R7
-R8
 !i113 0
-R9
-R2
+R8
+R1
 Xtbench_top_sv_unit
 R10
-R3
-V9EC:G3VazD7Q?:N:o_WE;1
+R2
+VX4eQ2:a0DTFF6W_Sk^@I90
 r1
 !s85 0
 !i10b 1
-!s100 5WV@Hoj7Eai:IQWGg?mcI1
-I9EC:G3VazD7Q?:N:o_WE;1
+!s100 5A9G?6LHDz`TcALLDVKRN3
+IX4eQ2:a0DTFF6W_Sk^@I90
+!i103 1
+S1
+R0
+w1633291287
+R19
+R20
+R18
+R12
+R13
+R14
+R15
+R16
+R17
+L0 3
+R5
+31
+!s108 1633291363.000000
+!s107 verification/interface.sv|verification/scoreboard.sv|verification/monitor.sv|verification/driver.sv|verification/transaction.sv|verification/generator.sv|verification/test.sv|verification/tbench_top.sv|verification/environment.sv|dut/dut_top.sv|dut/alu.sv|
+R7
+!i113 0
+R8
+!s92 +incdir+ -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+Xtest_sv_unit
+R10
+R2
+VKB5m3G[?fnETZhWFT4i563
+r1
+!s85 0
+!i10b 1
+!s100 TUiU3LZJ3BP6oo8V19A=j1
+IKB5m3G[?fnETZhWFT4i563
 !i103 1
 S1
 R0
 R11
-R18
-R19
-R17
-R12
-R13
-R14
-L0 3
-R5
-31
-R6
-R7
-R8
-!i113 0
-R9
-R2
-Xtest_sv_unit
-R10
-R3
-VQJc559:]oRcS>`7XYI=ba2
-r1
-!s85 0
-!i10b 1
-!s100 RSQI4Sgn<`iIKdnkbV>dk2
-IQJc559:]oRcS>`7XYI=ba2
-!i103 1
-S1
-R0
-Z20 w1633045715
 Z21 8verification/test.sv
 Z22 Fverification/test.sv
 R12
 R13
 R14
+R15
+R16
+R17
 L0 3
 R5
 31
 R6
-R7
-R8
-!i113 0
 R9
-R2
+R7
+!i113 0
+R8
+R1
 4testbench
-R3
-DXx4 work 12 test_sv_unit 0 22 QJc559:]oRcS>`7XYI=ba2
+R2
+DXx4 work 12 test_sv_unit 0 22 KB5m3G[?fnETZhWFT4i563
 R4
 r1
 !s85 0
@@ -211,15 +221,15 @@ I96m3WogV^SA0CAE7>P?nj1
 !s105 test_sv_unit
 S1
 R0
-R20
+w1633299859
 R21
 R22
 L0 4
 R5
 31
 R6
-R7
-R8
-!i113 0
 R9
-R2
+R7
+!i113 0
+R8
+R1

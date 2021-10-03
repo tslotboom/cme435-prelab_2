@@ -4,24 +4,22 @@
 # vmap work work 
 # Modifying modelsim.ini
 # QuestaSim vlog 2019.2 Compiler 2019.04 Apr 16 2019
-# Start time: 17:48:32 on Sep 30,2021
+# Start time: 17:50:55 on Oct 03,2021
 # vlog -f script/run.f 
 # -- Compiling module alu
 # -- Compiling module dut_top
-# -- Compiling package environment_sv_unit
-# -- Compiling interface intf
-# -- Compiling package tbench_top_sv_unit
 # -- Compiling module tbench_top
 # -- Compiling package test_sv_unit
 # -- Compiling program testbench
+# -- Compiling package environment_sv_unit
 # 
 # Top level modules:
 # 	tbench_top
-# End time: 17:48:32 on Sep 30,2021, Elapsed time: 0:00:00
+# End time: 17:50:55 on Oct 03,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim tbench_top 
-# Start time: 17:48:32 on Sep 30,2021
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 17:50:55 on Oct 03,2021
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 2019.2 linux Apr 16 2019
 # //
@@ -50,25 +48,83 @@
 # [Environment]: Start of test() at 0
 # ----------
 # [Generator]: a = 4, b = 1
-# [Generator]: op = 0d: y = 0
+# [Generator]: op = 1: y = 0
 # ----------
 # [Generator]: a = 9, b = 3
-# [Generator]: op = 0d: y = 0
+# [Generator]: op = 1: y = 0
 # ----------
 # [Generator]: a = 13, b = 13
-# [Generator]: op = 0d: y = 0
+# [Generator]: op = 1: y = 0
 # ----------
 # [Generator]: a = 5, b = 2
-# [Generator]: op = 0d: y = 0
+# [Generator]: op = 1: y = 0
 # ----------
 # [Generator]: a = 1, b = 13
-# [Generator]: op = 0d: y = 0
-# [Environment]: End of test() at 0
-# [Environment:] Start of post_test() at 0
-# [Environment:] End of post_test at 0
-# [Environment]: End of run() at 0
-# ** Note: $finish    : verification/environment.sv(44)
-#    Time: 0 ns  Iteration: 1  Instance: /tbench_top/test
-# [Testbench]: End of testcase(s) at 0
-# End time: 17:48:34 on Sep 30,2021, Elapsed time: 0:00:02
-# Errors: 0, Warnings: 0
+# [Generator]: op = 1: y = 0
+# ----------
+# [Driver]: a = 4, b = 1
+# [Driver]: op = 1: y = 0
+# ----------
+# [Monitor]: a = 4, b = 1
+# [Monitor]: op = 1: y = 3
+# ----------
+# [Scoreboard]: a = 4, b = 1
+# [Scoreboard]: op = 1: y = 3
+# [Scoreboard]: transaction 0/5
+# [Scoreboard]: Pass
+# ----------
+# [Driver]: a = 9, b = 3
+# [Driver]: op = 1: y = 0
+# ----------
+# [Monitor]: a = 9, b = 3
+# [Monitor]: op = 1: y = 6
+# ----------
+# [Scoreboard]: a = 9, b = 3
+# [Scoreboard]: op = 1: y = 6
+# [Scoreboard]: transaction 1/5
+# [Scoreboard]: Pass
+# ----------
+# [Driver]: a = 13, b = 13
+# [Driver]: op = 1: y = 0
+# ----------
+# [Monitor]: a = 13, b = 13
+# [Monitor]: op = 1: y = 0
+# ----------
+# [Scoreboard]: a = 13, b = 13
+# [Scoreboard]: op = 1: y = 0
+# [Scoreboard]: transaction 2/5
+# [Scoreboard]: Pass
+# ----------
+# [Driver]: a = 5, b = 2
+# [Driver]: op = 1: y = 0
+# ----------
+# [Monitor]: a = 5, b = 2
+# [Monitor]: op = 1: y = 3
+# ----------
+# [Scoreboard]: a = 5, b = 2
+# [Scoreboard]: op = 1: y = 3
+# [Scoreboard]: transaction 3/5
+# [Scoreboard]: Pass
+# ----------
+# [Driver]: a = 1, b = 13
+# [Driver]: op = 1: y = 0
+# ----------
+# [Monitor]: a = 1, b = 13
+# [Monitor]: op = 1: y = 244
+# ----------
+# [Scoreboard]: a = 1, b = 13
+# [Scoreboard]: op = 1: y = 244
+# [Scoreboard]: transaction 4/5
+# ** Error: [Scoreboard] Error: 
+# 	Expected result: -12 Received: 244
+#    Time: 145 ns  Scope: test_sv_unit.scoreboard.main File: verification/scoreboard.sv Line: 42
+# [Environment]: End of test() at 145
+# [Environment:] Start of post_test() at 145
+# [Environment:] There were 1 errors.
+# [Environment:] End of post_test at 145
+# [Environment]: End of run() at 145
+# ** Note: $finish    : verification/environment.sv(78)
+#    Time: 145 ns  Iteration: 2  Instance: /tbench_top/test
+# [Testbench]: End of testcase(s) at 145
+# End time: 17:50:56 on Oct 03,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
